@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="content">
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center">There are no tasks. Create one below!</h4>
+    {% else %}
+    <table>
+        <tr>
+            <th>User</th>
+
+        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <div class="form">
+        <form action="/recommend" method="POST">
+            <input type="search" name="content" id="content">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
