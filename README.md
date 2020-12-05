@@ -21,6 +21,10 @@ src/Templates/ - consists of html data.
 
 doc/ - contains the documents.
 
+preprocessNranking/ - contains the python code for data cleaning, preprocessing and ranking algorithms
+
+owl/ - contains the ontology files of the project
+
 
 ## Installation
 
