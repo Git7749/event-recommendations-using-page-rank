@@ -1,20 +1,39 @@
 {% extends 'base.html' %}
 
-
 {% block body %}
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+</style>
 <div class="content">
     {% if tasks|length < 1 %}
-    <h4 style="text-align: center">There are no tasks. Create one below!</h4>
+    <h4 style="text-align: center">There are no events recommended!</h4>
     {% else %}
     <table>
         <tr>
             <th>Events</th>
+            <th>Interested_by_friend</th>
+            <th>Friend_popularity_score</th>
 
         </tr>
         {% for task in tasks %}
             <tr>
-                <td>{{ task.id }}</td>
-                <td><a href = "/hotels">{{ task.name }}</a></td>
+                <td><a href = "/event?id={{task.event}}">{{ task.event }}</a></td>
+                <td><a href = "/recommend?userid={{task.friend}}">{{ task.friend }}</a></td>
+                <td>{{task.score}}</td>
             </tr>
         {% endfor %}
     </table>
@@ -22,4 +41,5 @@
 
 
 </div>
+
 {% endblock %}

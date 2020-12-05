@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+	a.entries:link {color:#ff0000;}
+	a.entries:visited {color:#0000ff;}
+	a.entries:hover {font-size:150%;}
+</style>
+<center>
+<ul class="items">
+	{% for task in tasks %}
+	<li>
+  <h1>hello</h1>
+		<a class= "entries" href="/recommend?userid={{ task.id }}">
+			<i class="fas fa-users"></i>
+			<div class="item">
+				<h5>{{ 1 }}</h5>
+			</div>
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+</center>
+
+{% endblock %}

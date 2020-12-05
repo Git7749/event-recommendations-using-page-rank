@@ -2,24 +2,34 @@
 
 
 {% block body %}
+<center>
 <div class="content">
-    {% if tasks|length < 1 %}
-    <h4 style="text-align: center">There are no tasks. Create one below!</h4>
-    {% else %}
-    <table>
-        <tr>
-            <th>Events</th>
+  <style>
 
-        </tr>
+
+          ul {
+          list-style-type: "→ ";
+          color: #ff6f00;
+          list-style-position: inside;
+      }
+    </style>
+    {% if tasks|length < 1 %}
+    <h4 style="text-align: center">There are no events. Create one below!</h4>
+    {% else %}
         {% for task in tasks %}
-            <tr>
-                <td>{{ task.id }}</td>
-                <td><a href = "/">{{ task.name }}</a></td>
-            </tr>
+          <h1>{{task.event_id}}</h1>
+
+          <ul >
+            <li>location:{{task.location}}</li>
+            <li>GPS:{{task.Coordinates}}</li>
+            <li>Score:{{task.score}}</li>
+          </ul>
+          </div>
+
         {% endfor %}
-    </table>
     {% endif %}
 
 
 </div>
+</center>
 {% endblock %}

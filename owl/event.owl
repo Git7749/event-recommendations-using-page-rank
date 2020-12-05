@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dpolinen/ontologies/2020/10/event#"
+     xml:base="http://www.semanticweb.org/dpolinen/ontologies/2020/10/event"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/event"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_city -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_city">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_country -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_country">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_state -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_state">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#at_location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/event#has_score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/event#has_score">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_properties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_properties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_properties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_latitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_preoperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_preoperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_preoperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_preoperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_location_preoperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_start_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_start_time">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#has_event_properties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dpolinen/ontologies/2020/10/untitled-ontology-9#Country"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
