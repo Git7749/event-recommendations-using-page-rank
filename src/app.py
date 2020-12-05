@@ -14,7 +14,7 @@ def index():
 def search():
     search_pattern = request.form['search_term'].strip()
     print(search_pattern)
-    sparql = SPARQLWrapper("http://127.0.0.1:3030/recommend/query")
+    sparql = SPARQLWrapper("http://18.222.233.173:3030/recommend/query")
     sparql.setQuery("""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -48,7 +48,7 @@ def recommendations():
     user_id = request.args.get('userid')
     print(user_id)
     print("******************************************************************")
-    sparql = SPARQLWrapper("http://127.0.0.1:3030/recommend/query")
+    sparql = SPARQLWrapper("http://18.222.233.173:3030/recommend/query")
     sparql.setQuery("""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -90,7 +90,7 @@ def event():
     event_id = request.args.get('id')
     print(event_id)
     # print("******************************************************************")
-    sparql = SPARQLWrapper("http://127.0.0.1:3030/event/query")
+    sparql = SPARQLWrapper("http://18.216.61.64:3030/event/query")
     sparql.setQuery("""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
