@@ -29,12 +29,14 @@ Requires Python 3.6 to be installed on the computer.
 Requires the package flask and sparqlWrapper. Install using the following command
 
 >> pip install flask
+
 >> pip install sparqlwrapper
 
 ## Build & Run
 
 To run the web app,switch to the folder **src** and use the following command in a terminal or command prompt (Windows).  
 >>  cd ./src
+
 >>  python app.py
 
 Now go to 127.0.0.1:5000 to use the webapp
